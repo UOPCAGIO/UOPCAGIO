@@ -69,6 +69,9 @@
             border: 1px solid #6a3d5a;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
+        .report-list li .icon {
+            margin-right: 10px;
+        }
         .carousel-inner {
             width: 100%;
             height: 100%; 
@@ -125,65 +128,55 @@
             <div class="col-md-3">
                 <h3 class="text-center">REPORTES</h3>
                 <ul class="report-list">
-                    <li id="report-0" onclick="toggleReport(0)"><i class="fas fa-chart-line"></i> AVANCE PREAFILIACIONES</li>
-                    <li id="report-1" onclick="toggleReport(1)"><i class="fas fa-city"></i> TPI URBANO</li>
-                    <li id="report-2" onclick="toggleReport(2)"><i class="fas fa-users"></i> PADRON DE HOGARES</li>
-                    <li id="report-3" onclick="toggleReport(3)"><i class="fas fa-stamp"></i> SELLO MUNICIPAL</li>
-                    <li id="report-4" onclick="toggleReport(4)"><i class="fas fa-file-alt"></i> AVANCE DE SOLICITUDES</li>
+                    <li id="report-0" onclick="toggleReport(0)" data-link="https://lookerstudio.google.com/embed/reporting/fd290106-f3bd-43c0-9e6b-0f782148d336/page/9qFxD">
+                        <i class="fas fa-chart-line icon"></i> TPI URBANO
+                        <a href="https://lookerstudio.google.com/reporting/b3728c94-d706-478c-9d90-f2706dccf3c1/page/p_tjdhnjjskd"  target="_blank" class="btn btn-link float-right" style="padding: 0;"><i class="fas fa-external-link-alt"></i></a>
+                    </li>
+                    <li id="report-1" onclick="toggleReport(1)" data-link="https://lookerstudio.google.com/embed/reporting/b3728c94-d706-478c-9d90-f2706dccf3c1/page/p_tjdhnjjskd">
+                        <i class="fas fa-city icon"></i> AVANCE PREAFILIACIONES
+                        <a href="https://lookerstudio.google.com/reporting/fd290106-f3bd-43c0-9e6b-0f782148d336/page/9qFxD?s=iSc3dzVx9Do" target="_blank" class="btn btn-link float-right" style="padding: 0;"><i class="fas fa-external-link-alt"></i></a>
+                    </li>
+                    <li id="report-2" onclick="toggleReport(2)" data-link="https://app.powerbi.com/view?r=eyJrIjoiM2Q1ODhjZjEtOTNlNS00ZTkxLTkwMDgtMjg3ZDQxZDZhYjFjIiwidCI6IjA4N2Y4ZmZkLTY5NzItNDc1MC04ZjlhLWMwZTQ4YjU2YmQyZiJ9">
+                        <i class="fas fa-users icon"></i> PADRON DE HOGARES
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiM2Q1ODhjZjEtOTNlNS00ZTkxLTkwMDgtMjg3ZDQxZDZhYjFjIiwidCI6IjA4N2Y4ZmZkLTY5NzItNDc1MC04ZjlhLWMwZTQ4YjU2YmQyZiJ9" target="_blank" class="btn btn-link float-right" style="padding: 0;"><i class="fas fa-external-link-alt"></i></a>
+                    </li>
+                    <li id="report-3" onclick="toggleReport(3)" data-link="https://lookerstudio.google.com/embed/reporting/a3734e57-46af-4e96-add3-7299d72a0c16/page/t1arD">
+                        <i class="fas fa-stamp icon"></i> SELLO MUNICIPAL
+                        <a href="https://lookerstudio.google.com/reporting/a3734e57-46af-4e96-add3-7299d72a0c16/page/t1arD?s=n3aeeB-So_g" target="_blank" class="btn btn-link float-right" style="padding: 0;"><i class="fas fa-external-link-alt"></i></a>
+                    </li>
+                    <li id="report-4" onclick="toggleReport(4)" data-link="https://lookerstudio.google.com/embed/reporting/2c732d40-09bf-41d3-b462-bab449fa23bc/page/i0PFE">
+                        <i class="fas fa-file-alt icon"></i> AVANCE DE SOLICITUDES
+                        <a href="https://lookerstudio.google.com/embed/reporting/2c732d40-09bf-41d3-b462-bab449fa23bc/page/i0PFE" target="_blank" class="btn btn-link float-right" style="padding: 0;"><i class="fas fa-external-link-alt"></i></a>
+                    </li>
                 </ul>
-                
-                
             </div>
 
             <div class="col-md-9">
-                <div id="reportCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div id="reportCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner">
-                       
-
                         <div class="carousel-item active">
-                            <iframe id="iframe-1" src="https://lookerstudio.google.com/embed/reporting/fd290106-f3bd-43c0-9e6b-0f782148d336/page/9qFxD" 
-                            style="width: 55%; height: 800px;" allowfullscreen onload="this.style.visibility='visible';" onerror="this.style.visibility='hidden'; reloadIframe(this);"></iframe>
-                            <div class="carousel-caption">
-                                <h5>AVANCE PREAFILIACIONES</h5>
-                            </div>
-                        </div>
-                        
-                        <div class="carousel-item">
-                            <iframe src="https://lookerstudio.google.com/embed/reporting/b3728c94-d706-478c-9d90-f2706dccf3c1/page/p_tjdhnjjskd"
-                            style="width: 79%; height: 800px;" allowfullscreen onload="this.style.visibility='visible';" onerror="this.style.visibility='hidden'; reloadIframe(this);"></iframe>
-                            <div class="carousel-caption">
-                                <h5>TPI URBANO</h5>
-                            </div>
+                            <iframe src="https://lookerstudio.google.com/embed/reporting/b3728c94-d706-478c-9d90-f2706dccf3c1/page/p_tjdhnjjskd" width="75%" height="780px"></iframe>
                         </div>
                         <div class="carousel-item">
-                            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2Q1ODhjZjEtOTNlNS00ZTkxLTkwMDgtMjg3ZDQxZDZhYjFjIiwidCI6IjA4N2Y4ZmZkLTY5NzItNDc1MC04ZjlhLWMwZTQ4YjU2YmQyZiJ9" 
-                            style="width: 100%; height: 800px;" allowfullscreen></iframe>
-                            <div class="carousel-caption">
-                                <h5>Reporte 3: PHA</h5>
-                            </div>
+                            <iframe src=  "https://lookerstudio.google.com/embed/reporting/fd290106-f3bd-43c0-9e6b-0f782148d336/page/9qFxD" width="65%" height="780px"></iframe>
                         </div>
                         <div class="carousel-item">
-                            <iframe src="https://lookerstudio.google.com/embed/reporting/a3734e57-46af-4e96-add3-7299d72a0c16/page/t1arD"
-                            style="width: 45%; height: 750px;" allowfullscreen onload="this.style.visibility='visible';" onerror="this.style.visibility='hidden'; reloadIframe(this);"></iframe>
-                            <div class="carousel-caption">
-                                <h5>Reporte 4: Sello Municipal</h5>
-                            </div>
+                            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiM2Q1ODhjZjEtOTNlNS00ZTkxLTkwMDgtMjg3ZDQxZDZhYjFjIiwidCI6IjA4N2Y4ZmZkLTY5NzItNDc1MC04ZjlhLWMwZTQ4YjU2YmQyZiJ9" width="100%" height="600px"></iframe>
                         </div>
                         <div class="carousel-item">
-                            <iframe src="https://lookerstudio.google.com/embed/reporting/2c732d40-09bf-41d3-b462-bab449fa23bc/page/i0PFE"
-                            style="width: 95%; height: 800px;" allowfullscreen onload="this.style.visibility='visible';" onerror="this.style.visibility='hidden'; reloadIframe(this);"></iframe>
-                            <div class="carousel-caption">
-                                <h5>Reporte 5: AVANCE DE SOLICITUDES</h5>
-                            </div>
+                            <iframe src="https://lookerstudio.google.com/embed/reporting/a3734e57-46af-4e96-add3-7299d72a0c16/page/t1arD" width="65%" height="780px"></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe src="https://lookerstudio.google.com/embed/reporting/2c732d40-09bf-41d3-b462-bab449fa23bc/page/i0PFE" width="100%" height="780px"></iframe>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#reportCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
+                        <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#reportCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
@@ -191,28 +184,14 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        let currentIndex = null;
-
-        function toggleReport(index) {
-            const reportListItems = document.querySelectorAll('.report-list li');
-
-            if (currentIndex === index) {
-                reportListItems[index].classList.remove('active');
-                currentIndex = null;
-                $('#reportCarousel').carousel('cycle'); 
-            } else {
-                if (currentIndex !== null) {
-                    reportListItems[currentIndex].classList.remove('active');
-                }
-                reportListItems[index].classList.add('active');
-                currentIndex = index;
-
-                $('#reportCarousel').carousel(index); 
-                $('#reportCarousel').carousel('pause'); 
-            }
+        function toggleReport(reportIndex) {
+            $('.carousel-item').removeClass('active');
+            $('.carousel-item').eq(reportIndex).addClass('active');
+            $('.report-list li').removeClass('active');
+            $('.report-list li').eq(reportIndex).addClass('active');
         }
     </script>
 </body>
